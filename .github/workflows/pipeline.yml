@@ -32,3 +32,6 @@ jobs:
       - run: | 
           python -V
           python first.py
+      # Installing Terraform 
+      - uses: hashicorp/setup-terraform@v3
+      - run: terraform -v
